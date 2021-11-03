@@ -3,20 +3,26 @@
   <head>
     <meta charset="utf-8">
     <title>Astro Weight Calculator</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
      <body>
+       <h1>I'm an Astro Weight Calculator!</h1>
        <form action="">
-         <label for="user-weight">Enter your Weight</label>
-         <input type="text" id="user-weight" placeholder="Enter Weight" required>
-         <label for="planets">Select a Planet</label>
-         <select name="" id="planets">
-           <option selected disabled>Select...</option>
-         </select>
-         <!-- <label for="pluto">Pluto is NOT a planet</label>
-         <input type="checkbox" name="pluto" id="pluto" onclick='togglePluto'> -->
+         <div class="inputs">
+           <div class="input-group">
+             <label for="user-weight">Enter your Weight:</label>
+             <input type="text" autocomplete="off" id="user-weight" placeholder="Weight (lbs)" required>
+           </div>
+           <div class="input-group">
+             <label for="planets">Select a Planet</label>
+             <select name="planets" id="planets">
+               <option selected></option>
+             </select>
+           </div>
+         </div>
          <p id='output'></p>
-         <button type="button" id='calculate-button' onclick='handleClickEvent()'>Calculate</button>
+         <button type="button" id='calculate-button' onclick='handleClickEvent()'><strong>Calculate!</strong></button>
        </form>
 
        <script src="main.js" charset="utf-8"></script>

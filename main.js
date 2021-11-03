@@ -37,6 +37,6 @@ function handleClickEvent(e) {
     let userWeight = document.getElementById('user-weight').value;
     let selectedPlanet = document.getElementById('planets').value;
     let result = calulateWeight(userWeight, selectedPlanet);
-    let text =  `If you were on ${selectedPlanet}, you would weigh ${result}lbs!`
-    let message = document.getElementById('output').append(text);
+    
+    document.getElementById('output').innerHTML = `If you were on <span>${selectedPlanet}</span>, you would weigh <span>${result}lbs</span>!`;
 }

@@ -1,0 +1,71 @@
+:root {
+    --main-bg-color: #04052F;
+    --text-color: #FFF;
+    --accent-color: #D64E48;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+    font-family: 'Varela Round',
+    sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    color: var(--accent-color);
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+}
+
+.inputs{
+    display: flex;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 5%;
+    font-size: 1.3em;
+}
+
+.input-group label {
+    text-align: center;
+}
+
+.input-group input, .input-group select{
+    margin: 1.5em;
+    border: none;
+    border-bottom: 2px solid var(--accent-color);
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+.input-group input:selected {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
+}
+
+#output{
+    margin: auto;
+    padding: 1em;
+}
+
+button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+    margin: auto;
+    padding: 20px 70px;
+}
+
+span{
+    color: var(--accent-color);
+}
