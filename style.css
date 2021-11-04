@@ -51,7 +51,7 @@ form{
     color: var(--text-color);
 }
 
-#output, #checked{
+#output, #checked, #addedOutput{
     margin: auto;
     padding: 1em;
 }

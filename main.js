@@ -38,6 +38,7 @@ function addPlanet(e){
     let weightMultiplier = document.getElementById('weightMultiplier').value;
     planets.push([planetName,parseFloat(weightMultiplier)]);
     renderPlanets(planets)
+    document.getElementById('addedOutput').innerHTML = `The planet <span>${planetName}</span> has been added!`;
 }
 
 function renderPlanets(planetArray) {
