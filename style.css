@@ -12,7 +12,7 @@ body {
     font-size: 16px;
 }
 
-h1{
+h1,h2{
     color: var(--accent-color);
     text-align: center;
 }
@@ -34,7 +34,7 @@ form{
     font-size: 1.3em;
 }
 
-.input-group label {
+.input-group label, .checked {
     text-align: center;
 }
 
@@ -51,7 +51,7 @@ form{
     color: var(--text-color);
 }
 
-#output{
+#output, #checked{
     margin: auto;
     padding: 1em;
 }
