@@ -1,10 +1,11 @@
 :root {
-    --main-bg-color: #04052F;
+    --main-bg-color: transparent;
     --text-color: #FFF;
     --accent-color: #D64E48;
 }
 
 body {
+    background-image: url(/public/spaceIMG.webp);
     background-color: var(--main-bg-color);
     color: var(--text-color);
     font-family: 'Varela Round',
@@ -12,10 +13,15 @@ body {
     font-size: 16px;
     overflow-y: hidden;
 }
+h1{
+    font-size: 40px; 
+}
 
 h1,h2{
+    letter-spacing: .75px;
     color: var(--accent-color);
     text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 form{
