@@ -47,7 +47,7 @@ function calculateWeight(weight, planetName) {
       planetWeight = currentPlanet[1]
     }
   }
-  return weight * planetWeight;
+  return (weight * planetWeight).toFixed(2);
 }
 
 //activates when the button is clicked.
@@ -58,7 +58,7 @@ function handleClickEvent(e) {
   let selectedPlanet = document.getElementById('planets').value;
   let result = calculateWeight(userWeight, selectedPlanet);
   //get 'output' id and add inside the message
-  document.getElementById('output').innerHTML = `If you were on <span>${selectedPlanet}</span>, you would weigh <span>${result}lbs</span>!`;
+  document.getElementById('output').innerHTML = `If you were on <span>${selectedPlanet}</span>, you would weigh <span>${result} lbs</span>!`;
 }
 
 //BONUS -- REMOVE PLUTO CHECKBOX

@@ -10,6 +10,7 @@ body {
     font-family: 'Varela Round',
     sans-serif;
     font-size: 16px;
+    overflow-y: hidden;
 }
 
 h1,h2{
@@ -68,4 +69,30 @@ button {
 
 span{
     color: var(--accent-color);
+}
+
+.rocket {
+    position: absolute;
+    bottom: -600px;
+    left: -18%;
+    animation: fly 8s .5s ease-in;
+    animation-iteration-count: infinite;
+}
+
+.launch {
+    position: absolute;
+    bottom: -600px;
+    right: -19%;
+    animation: fly 17s .5s ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fly {
+    0% {
+        bottom: -600px;
+    }
+
+    100% {
+        bottom: 100%;
+    }
 }
