@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Astro Weight Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+
+<body>
+  <img class="rocket" src="https://cdn4.iconfinder.com/data/icons/whsr-january-flaticon-set/512/rocket.png">
+  <img class="launch" src="https://cdn4.iconfinder.com/data/icons/whsr-january-flaticon-set/512/rocket.png">
+  <h1>I'm an Astro Weight Calculator!</h1>
+  <form action="">
+    <div class="inputs">
+      <div class="input-group">
+        <label for="user-weight">Enter your weight</label>
+        <input type="text" autocomplete="off" id="user-weight" placeholder="Weight (lbs)" required>
+      </div>
+      <div class="input-group">
+        <label for="planets">Select a Planet</label>
+        <select name="planets" id="planets">
+          <option selected></option>
+        </select>
+        <label for="checked" class="checked"><input type="checkbox" name="checked" id="checked"> Pluto is not a
+          planet!</label>
+      </div>
+    </div>
+
+    <p id='output'></p>
+    <button type="button" id='calculate-button' onclick='handleClickEvent()'><strong>Calculate!</strong></button>
+  </form>
+  <h2>Have you discovered a new planet?</h2>
+  <form>
+    <div class="inputs">
+      <div class="input-group">
+        <label for="planetName">Enter the name of the planet</label>
+        <input type="text" autocomplete="off" id="planetName">
+      </div>
+      <div class="input-group">
+        <label for="weightMultiplier">Enter the planet's weight multiplier</label>
+        <input type="text" autocomplete="off" id="weightMultiplier">
+      </div>
+    </div>
+    <p id='addedOutput'></p>
+    <button type="button" id="add-button" onclick="addPlanet()"><strong>Add Planet to the list</strong></button>
+  </form>
+
+  
+  <script src="main.js" charset="utf-8"></script>
+</body>
+
+
+</html>
